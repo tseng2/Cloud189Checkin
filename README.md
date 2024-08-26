@@ -1,6 +1,6 @@
 # Cloud189Checkin
 
-天翼网盘自动签到（随机容量) 和抽奖（三次，每次 50M，共 150M）获取空间，家庭空间签到（随机容量）。
+天翼网盘自动签到（随机容量) 和抽奖（两次，每次 50M，共 150M）获取空间，家庭空间签到（随机容量）。
 
 # 重要说明！！！
 
@@ -11,6 +11,7 @@
 - [GitHub Action 运行](#GitHubAction运行)
 - [本地运行](#本地运行)
 - [其他环境集成](#其他环境集成)
+- [交流群](#交流群)
 - [更新内容](#更新内容)
 
 ## GitHub Action 运行
@@ -25,6 +26,10 @@
 ![](https://cdn.jsdelivr.net/gh/wes-lin/Cloud189Checkin/image/env.png)
 创建好后编辑 user 环境，添加变量 TY_ACCOUNTS, userName 和 password 为你的天翼账号和密码,可以添加多个账号如[{"userName":"账号 1","password":"账号 1 的密码"},{"userName":"账号 2","password":"账号 2 的密码"}]
 ![](https://cdn.jsdelivr.net/gh/wes-lin/Cloud189Checkin/image/accounts.jpg)
+
+如果你遇到你账号密码中有特殊字符如#$等无法解析的[SyntaxError](https://github.com/wes-lin/Cloud189Checkin/issues/76),请在你的配置中将TY_ACCOUNTS用单引号包起来
+例如'[{"userName":"1234567890","password":"123334#$#$"}]'
+
 
 ### 设置推送
 
@@ -70,7 +75,7 @@ Actions > Cloud check in action > build
 ### 环境配置
 
 ```
-Node.js 20+
+Node.js 18+
 ```
 
 ### 克隆项目
@@ -109,6 +114,10 @@ npm start
 
 ## 其他环境集成
 
-我已经天翼网盘的相关 API 集成到[SDK](https://github.com/wes-lin/cloud189-sdk)了，有编程能力的同学可以自行拓展，集成到自己的代码环境。
+我已经把天翼网盘的相关 API 集成到[SDK](https://github.com/wes-lin/cloud189-sdk)了，有编程能力的同学可以自行拓展，集成到自己的代码环境。
+
+## 交流群
+
+![](https://cdn.jsdelivr.net/gh/wes-lin/Cloud189Checkin/image/group.jpg)
 
 ## [更新内容](https://github.com/wes-lin/Cloud189Checkin/wiki/更新内容)
